@@ -7,14 +7,12 @@ import { vapi } from "@/lib/vapi.sdk";
 import { interviewer } from "@/constants";
 import { createFeedback } from "@/lib/actions/general.action";
 import { CreateAssistantDTO } from "@vapi-ai/web/dist/api";
-
 enum CallStatus {
   INACTIVE = "INACTIVE",
   CONNECTING = "CONNECTING",
   ACTIVE = "ACTIVE",
   FINISHED = "FINISHED",
 }
-
 interface SavedMessage {
   role: "user" | "system" | "assistant";
   content: string;
