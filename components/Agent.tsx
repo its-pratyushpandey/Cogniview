@@ -17,7 +17,6 @@ interface SavedMessage {
   role: "user" | "system" | "assistant";
   content: string;
 }
-
 const Agent = ({
   userName,
   userId,
